@@ -1,0 +1,110 @@
+\hypertarget{namespacedmx__handler}{}\doxysection{dmx\+\_\+handler Namespace Reference}
+\label{namespacedmx__handler}\index{dmx\_handler@{dmx\_handler}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacedmx__handler_aefe10acdf85b55a5c6d4dd066a43a11f}{send\+\_\+dmx}} ()
+\item 
+def \mbox{\hyperlink{namespacedmx__handler_a0d9947a5e435d5b977f960071496aef9}{dmx\+\_\+sent}} (status)
+\item 
+def \mbox{\hyperlink{namespacedmx__handler_a4d4448d908fc43927b1ad77a852acd9d}{New\+Data}} (data)
+\item 
+def \mbox{\hyperlink{namespacedmx__handler_a5b75624b8c1f553f2591f34e39b60f07}{process\+\_\+queue}} (root)
+\item 
+def \mbox{\hyperlink{namespacedmx__handler_a57d1093223dd839fb6487fb50c504d8c}{run\+\_\+ola\+\_\+client}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedmx__handler_af717e7b1b69d9248d904c840bfff6272}{wrapper}} = Client\+Wrapper()
+\item 
+\mbox{\hyperlink{namespacedmx__handler_ac30bd21b84a00869ca9024786f703379}{data\+\_\+queue}} = queue.\+Queue()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb} * @file dmx_handler.py
+ * @brief Handles DMX data processing and communication with the OLA client.
+ * 
+ * This module manages sending DMX data to the specified universe, processing
+ * incoming DMX data, and running the OLA client in a separate thread.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacedmx__handler_a0d9947a5e435d5b977f960071496aef9}\label{namespacedmx__handler_a0d9947a5e435d5b977f960071496aef9}} 
+\index{dmx\_handler@{dmx\_handler}!dmx\_sent@{dmx\_sent}}
+\index{dmx\_sent@{dmx\_sent}!dmx\_handler@{dmx\_handler}}
+\doxysubsubsection{\texorpdfstring{dmx\_sent()}{dmx\_sent()}}
+{\footnotesize\ttfamily def dmx\+\_\+handler.\+dmx\+\_\+sent (\begin{DoxyParamCaption}\item[{}]{status }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} * @brief Callback function to handle the result of sending DMX data.
+ * 
+ * Prints a success or failure message based on the status of the DMX data
+ * sending operation.
+ * 
+ * @param status The status object returned from the OLA client.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacedmx__handler_a4d4448d908fc43927b1ad77a852acd9d}\label{namespacedmx__handler_a4d4448d908fc43927b1ad77a852acd9d}} 
+\index{dmx\_handler@{dmx\_handler}!NewData@{NewData}}
+\index{NewData@{NewData}!dmx\_handler@{dmx\_handler}}
+\doxysubsubsection{\texorpdfstring{NewData()}{NewData()}}
+{\footnotesize\ttfamily def dmx\+\_\+handler.\+New\+Data (\begin{DoxyParamCaption}\item[{}]{data }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} * @brief Handle new DMX data received from the OLA client.
+ * 
+ * Puts the received DMX data into a queue for further processing.
+ * 
+ * @param data The DMX data received from the OLA client.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacedmx__handler_a5b75624b8c1f553f2591f34e39b60f07}\label{namespacedmx__handler_a5b75624b8c1f553f2591f34e39b60f07}} 
+\index{dmx\_handler@{dmx\_handler}!process\_queue@{process\_queue}}
+\index{process\_queue@{process\_queue}!dmx\_handler@{dmx\_handler}}
+\doxysubsubsection{\texorpdfstring{process\_queue()}{process\_queue()}}
+{\footnotesize\ttfamily def dmx\+\_\+handler.\+process\+\_\+queue (\begin{DoxyParamCaption}\item[{}]{root }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} * @brief Process DMX data from the queue and update the visual display.
+ * 
+ * Retrieves data from the queue and updates the DMX data buffer and visual
+ * display for the channels on the current page.
+ * 
+ * @param root The Tkinter root window for scheduling further processing.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacedmx__handler_a57d1093223dd839fb6487fb50c504d8c}\label{namespacedmx__handler_a57d1093223dd839fb6487fb50c504d8c}} 
+\index{dmx\_handler@{dmx\_handler}!run\_ola\_client@{run\_ola\_client}}
+\index{run\_ola\_client@{run\_ola\_client}!dmx\_handler@{dmx\_handler}}
+\doxysubsubsection{\texorpdfstring{run\_ola\_client()}{run\_ola\_client()}}
+{\footnotesize\ttfamily def dmx\+\_\+handler.\+run\+\_\+ola\+\_\+client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} * @brief Run the OLA client in a separate thread.
+ * 
+ * Registers the DMX universe with the OLA client and starts the OLA event
+ * loop to receive DMX data. Handles exceptions during client setup.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacedmx__handler_aefe10acdf85b55a5c6d4dd066a43a11f}\label{namespacedmx__handler_aefe10acdf85b55a5c6d4dd066a43a11f}} 
+\index{dmx\_handler@{dmx\_handler}!send\_dmx@{send\_dmx}}
+\index{send\_dmx@{send\_dmx}!dmx\_handler@{dmx\_handler}}
+\doxysubsubsection{\texorpdfstring{send\_dmx()}{send\_dmx()}}
+{\footnotesize\ttfamily def dmx\+\_\+handler.\+send\+\_\+dmx (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} * @brief Send the current DMX data to the specified universe.
+ * 
+ * Creates a new OLA client instance and sends the DMX data buffer to the
+ * specified universe. Calls the dmx_sent callback to handle the status of
+ * the DMX data sending operation.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacedmx__handler_ac30bd21b84a00869ca9024786f703379}\label{namespacedmx__handler_ac30bd21b84a00869ca9024786f703379}} 
+\index{dmx\_handler@{dmx\_handler}!data\_queue@{data\_queue}}
+\index{data\_queue@{data\_queue}!dmx\_handler@{dmx\_handler}}
+\doxysubsubsection{\texorpdfstring{data\_queue}{data\_queue}}
+{\footnotesize\ttfamily dmx\+\_\+handler.\+data\+\_\+queue = queue.\+Queue()}
+
+\mbox{\Hypertarget{namespacedmx__handler_af717e7b1b69d9248d904c840bfff6272}\label{namespacedmx__handler_af717e7b1b69d9248d904c840bfff6272}} 
+\index{dmx\_handler@{dmx\_handler}!wrapper@{wrapper}}
+\index{wrapper@{wrapper}!dmx\_handler@{dmx\_handler}}
+\doxysubsubsection{\texorpdfstring{wrapper}{wrapper}}
+{\footnotesize\ttfamily dmx\+\_\+handler.\+wrapper = Client\+Wrapper()}
+

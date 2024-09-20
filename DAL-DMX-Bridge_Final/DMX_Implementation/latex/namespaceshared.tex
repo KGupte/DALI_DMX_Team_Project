@@ -1,0 +1,88 @@
+\hypertarget{namespaceshared}{}\doxysection{shared Namespace Reference}
+\label{namespaceshared}\index{shared@{shared}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classshared_1_1VisualState}{Visual\+State}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespaceshared_a87bf4d98c49c6e828db06b85c55c5b00}{format\+\_\+dmx\+\_\+bit\+\_\+structure}} (channel, value)
+\item 
+def \mbox{\hyperlink{namespaceshared_a7344c82de96737ccd638ab4426c3dac6}{update\+\_\+visual\+\_\+display}} (channel, value)
+\item 
+def \mbox{\hyperlink{namespaceshared_a548329f5c989120ea8ea252f6be11b72}{update\+\_\+brightness}} (channel, value, text\+\_\+display=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceshared_a8a93af071606a05721f468d9f6ae1628}{visual\+\_\+state}} = \mbox{\hyperlink{classshared_1_1VisualState}{Visual\+State}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}"
+ * @file shared.py
+ * @brief Provides shared functions for formatting DMX data and updating the visual display.
+ * 
+ * Contains utility functions to format DMX bit structures for display and update
+ * the visual representation of DMX channels.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceshared_a87bf4d98c49c6e828db06b85c55c5b00}\label{namespaceshared_a87bf4d98c49c6e828db06b85c55c5b00}} 
+\index{shared@{shared}!format\_dmx\_bit\_structure@{format\_dmx\_bit\_structure}}
+\index{format\_dmx\_bit\_structure@{format\_dmx\_bit\_structure}!shared@{shared}}
+\doxysubsubsection{\texorpdfstring{format\_dmx\_bit\_structure()}{format\_dmx\_bit\_structure()}}
+{\footnotesize\ttfamily def shared.\+format\+\_\+dmx\+\_\+bit\+\_\+structure (\begin{DoxyParamCaption}\item[{}]{channel,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} * @brief Format the DMX bit structure for display.
+ * 
+ * Creates a formatted string representing the DMX bit structure for a specific
+ * channel. Includes simulated break and Mark After Break bits.
+ * 
+ * @param channel The DMX channel number.
+ * @param value The brightness value of the channel.
+ * 
+ * @return A formatted string representing the DMX bit structure.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceshared_a548329f5c989120ea8ea252f6be11b72}\label{namespaceshared_a548329f5c989120ea8ea252f6be11b72}} 
+\index{shared@{shared}!update\_brightness@{update\_brightness}}
+\index{update\_brightness@{update\_brightness}!shared@{shared}}
+\doxysubsubsection{\texorpdfstring{update\_brightness()}{update\_brightness()}}
+{\footnotesize\ttfamily def shared.\+update\+\_\+brightness (\begin{DoxyParamCaption}\item[{}]{channel,  }\item[{}]{value,  }\item[{}]{text\+\_\+display = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} * @brief Update the brightness of a specific DMX channel.
+ * 
+ * Adjusts the brightness value for a given DMX channel and sends the updated
+ * DMX data. Optionally updates a text display with the formatted DMX bit structure.
+ * 
+ * @param channel The DMX channel number.
+ * @param value The new brightness value for the channel.
+ * @param text_display (Optional) The Tkinter Text widget to update with DMX bit structure.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceshared_a7344c82de96737ccd638ab4426c3dac6}\label{namespaceshared_a7344c82de96737ccd638ab4426c3dac6}} 
+\index{shared@{shared}!update\_visual\_display@{update\_visual\_display}}
+\index{update\_visual\_display@{update\_visual\_display}!shared@{shared}}
+\doxysubsubsection{\texorpdfstring{update\_visual\_display()}{update\_visual\_display()}}
+{\footnotesize\ttfamily def shared.\+update\+\_\+visual\+\_\+display (\begin{DoxyParamCaption}\item[{}]{channel,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} * @brief Update the channel visual display based on single channel brightness.
+ * 
+ * Updates the visual display for a specific DMX channel based on its brightness
+ * value. Adjusts the color to represent the brightness level.
+ * 
+ * @param channel The DMX channel number.
+ * @param value The brightness value of the channel.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceshared_a8a93af071606a05721f468d9f6ae1628}\label{namespaceshared_a8a93af071606a05721f468d9f6ae1628}} 
+\index{shared@{shared}!visual\_state@{visual\_state}}
+\index{visual\_state@{visual\_state}!shared@{shared}}
+\doxysubsubsection{\texorpdfstring{visual\_state}{visual\_state}}
+{\footnotesize\ttfamily shared.\+visual\+\_\+state = \mbox{\hyperlink{classshared_1_1VisualState}{Visual\+State}}()}
+

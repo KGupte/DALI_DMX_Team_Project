@@ -1,0 +1,89 @@
+\hypertarget{namespacemain}{}\doxysection{main Namespace Reference}
+\label{namespacemain}\index{main@{main}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacemain_aa698d1260ba54f169d55a5630f0f0aa3}{root}} = tk.\+Tk()
+\item 
+list \mbox{\hyperlink{namespacemain_a20cf4d32ed871b1e8a4fd010906473b4}{sliders}} = \mbox{[}$\,$\mbox{]}
+\item 
+list \mbox{\hyperlink{namespacemain_a1fb76aed4481a52cd2f91e1924e66f4b}{labels}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{namespacemain_aa720fbb749c9736ef5e33edc71c7b40b}{prev\+\_\+button}} = tk.\+Button(\mbox{\hyperlink{namespacemain_aa698d1260ba54f169d55a5630f0f0aa3}{root}}, text=\char`\"{}Previous Page\char`\"{}, command=lambda\+: update\+\_\+page(max(current\+\_\+page -\/ 1, 0), \mbox{\hyperlink{namespacemain_a20cf4d32ed871b1e8a4fd010906473b4}{sliders}}, \mbox{\hyperlink{namespacemain_a1fb76aed4481a52cd2f91e1924e66f4b}{labels}}))
+\item 
+\mbox{\hyperlink{namespacemain_a7d7af6001e5950e7ef850fec0133b575}{side}}
+\item 
+\mbox{\hyperlink{namespacemain_aa142d328378cdeb04553f2242279de7a}{next\+\_\+button}} = tk.\+Button(\mbox{\hyperlink{namespacemain_aa698d1260ba54f169d55a5630f0f0aa3}{root}}, text=\char`\"{}Next Page\char`\"{}, command=lambda\+: update\+\_\+page(min(current\+\_\+page + 1, (512 // channels\+\_\+per\+\_\+page) -\/ 1), \mbox{\hyperlink{namespacemain_a20cf4d32ed871b1e8a4fd010906473b4}{sliders}}, \mbox{\hyperlink{namespacemain_a1fb76aed4481a52cd2f91e1924e66f4b}{labels}}))
+\item 
+\mbox{\hyperlink{namespacemain_a7a716e67103ba3211a4e0eac4b5e3430}{target}}
+\item 
+\mbox{\hyperlink{namespacemain_accc748373d881848c2eb5807b7154398}{run\+\_\+ola\+\_\+client}}
+\item 
+\mbox{\hyperlink{namespacemain_a092c6a8193147833d5a33663dc4188a1}{daemon}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb} * @file main.py
+ * @brief Main application entry point for the DMX Controller.
+ * 
+ * This script sets up the main Tkinter GUI window, creates input controls,
+ * and starts the OLA client to handle DMX data.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacemain_a092c6a8193147833d5a33663dc4188a1}\label{namespacemain_a092c6a8193147833d5a33663dc4188a1}} 
+\index{main@{main}!daemon@{daemon}}
+\index{daemon@{daemon}!main@{main}}
+\doxysubsubsection{\texorpdfstring{daemon}{daemon}}
+{\footnotesize\ttfamily main.\+daemon}
+
+\mbox{\Hypertarget{namespacemain_a1fb76aed4481a52cd2f91e1924e66f4b}\label{namespacemain_a1fb76aed4481a52cd2f91e1924e66f4b}} 
+\index{main@{main}!labels@{labels}}
+\index{labels@{labels}!main@{main}}
+\doxysubsubsection{\texorpdfstring{labels}{labels}}
+{\footnotesize\ttfamily list main.\+labels = \mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{namespacemain_aa142d328378cdeb04553f2242279de7a}\label{namespacemain_aa142d328378cdeb04553f2242279de7a}} 
+\index{main@{main}!next\_button@{next\_button}}
+\index{next\_button@{next\_button}!main@{main}}
+\doxysubsubsection{\texorpdfstring{next\_button}{next\_button}}
+{\footnotesize\ttfamily main.\+next\+\_\+button = tk.\+Button(\mbox{\hyperlink{namespacemain_aa698d1260ba54f169d55a5630f0f0aa3}{root}}, text=\char`\"{}Next Page\char`\"{}, command=lambda\+: update\+\_\+page(min(current\+\_\+page + 1, (512 // channels\+\_\+per\+\_\+page) -\/ 1), \mbox{\hyperlink{namespacemain_a20cf4d32ed871b1e8a4fd010906473b4}{sliders}}, \mbox{\hyperlink{namespacemain_a1fb76aed4481a52cd2f91e1924e66f4b}{labels}}))}
+
+\mbox{\Hypertarget{namespacemain_aa720fbb749c9736ef5e33edc71c7b40b}\label{namespacemain_aa720fbb749c9736ef5e33edc71c7b40b}} 
+\index{main@{main}!prev\_button@{prev\_button}}
+\index{prev\_button@{prev\_button}!main@{main}}
+\doxysubsubsection{\texorpdfstring{prev\_button}{prev\_button}}
+{\footnotesize\ttfamily main.\+prev\+\_\+button = tk.\+Button(\mbox{\hyperlink{namespacemain_aa698d1260ba54f169d55a5630f0f0aa3}{root}}, text=\char`\"{}Previous Page\char`\"{}, command=lambda\+: update\+\_\+page(max(current\+\_\+page -\/ 1, 0), \mbox{\hyperlink{namespacemain_a20cf4d32ed871b1e8a4fd010906473b4}{sliders}}, \mbox{\hyperlink{namespacemain_a1fb76aed4481a52cd2f91e1924e66f4b}{labels}}))}
+
+\mbox{\Hypertarget{namespacemain_aa698d1260ba54f169d55a5630f0f0aa3}\label{namespacemain_aa698d1260ba54f169d55a5630f0f0aa3}} 
+\index{main@{main}!root@{root}}
+\index{root@{root}!main@{main}}
+\doxysubsubsection{\texorpdfstring{root}{root}}
+{\footnotesize\ttfamily main.\+root = tk.\+Tk()}
+
+\mbox{\Hypertarget{namespacemain_accc748373d881848c2eb5807b7154398}\label{namespacemain_accc748373d881848c2eb5807b7154398}} 
+\index{main@{main}!run\_ola\_client@{run\_ola\_client}}
+\index{run\_ola\_client@{run\_ola\_client}!main@{main}}
+\doxysubsubsection{\texorpdfstring{run\_ola\_client}{run\_ola\_client}}
+{\footnotesize\ttfamily main.\+run\+\_\+ola\+\_\+client}
+
+\mbox{\Hypertarget{namespacemain_a7d7af6001e5950e7ef850fec0133b575}\label{namespacemain_a7d7af6001e5950e7ef850fec0133b575}} 
+\index{main@{main}!side@{side}}
+\index{side@{side}!main@{main}}
+\doxysubsubsection{\texorpdfstring{side}{side}}
+{\footnotesize\ttfamily main.\+side}
+
+\mbox{\Hypertarget{namespacemain_a20cf4d32ed871b1e8a4fd010906473b4}\label{namespacemain_a20cf4d32ed871b1e8a4fd010906473b4}} 
+\index{main@{main}!sliders@{sliders}}
+\index{sliders@{sliders}!main@{main}}
+\doxysubsubsection{\texorpdfstring{sliders}{sliders}}
+{\footnotesize\ttfamily list main.\+sliders = \mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{namespacemain_a7a716e67103ba3211a4e0eac4b5e3430}\label{namespacemain_a7a716e67103ba3211a4e0eac4b5e3430}} 
+\index{main@{main}!target@{target}}
+\index{target@{target}!main@{main}}
+\doxysubsubsection{\texorpdfstring{target}{target}}
+{\footnotesize\ttfamily main.\+target}
+

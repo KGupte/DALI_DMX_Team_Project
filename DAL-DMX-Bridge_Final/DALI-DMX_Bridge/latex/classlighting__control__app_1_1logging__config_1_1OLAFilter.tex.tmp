@@ -1,0 +1,29 @@
+\hypertarget{classlighting__control__app_1_1logging__config_1_1OLAFilter}{}\doxysection{lighting\+\_\+control\+\_\+app.\+logging\+\_\+config.\+OLAFilter Class Reference}
+\label{classlighting__control__app_1_1logging__config_1_1OLAFilter}\index{lighting\_control\_app.logging\_config.OLAFilter@{lighting\_control\_app.logging\_config.OLAFilter}}
+
+
+Inheritance diagram for lighting\+\_\+control\+\_\+app.\+logging\+\_\+config.\+OLAFilter\+:
+% FIG 0
+
+
+Collaboration diagram for lighting\+\_\+control\+\_\+app.\+logging\+\_\+config.\+OLAFilter\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classlighting__control__app_1_1logging__config_1_1OLAFilter_a20166faf0dd21dde7291e692336375bb}{filter}} (self, record)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlighting__control__app_1_1logging__config_1_1OLAFilter_a20166faf0dd21dde7291e692336375bb}\label{classlighting__control__app_1_1logging__config_1_1OLAFilter_a20166faf0dd21dde7291e692336375bb}} 
+\index{lighting\_control\_app.logging\_config.OLAFilter@{lighting\_control\_app.logging\_config.OLAFilter}!filter@{filter}}
+\index{filter@{filter}!lighting\_control\_app.logging\_config.OLAFilter@{lighting\_control\_app.logging\_config.OLAFilter}}
+\doxysubsubsection{\texorpdfstring{filter()}{filter()}}
+{\footnotesize\ttfamily def lighting\+\_\+control\+\_\+app.\+logging\+\_\+config.\+OLAFilter.\+filter (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{record }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lighting\+\_\+control\+\_\+app/\mbox{\hyperlink{logging__config_8py}{logging\+\_\+config.\+py}}\end{DoxyCompactItemize}

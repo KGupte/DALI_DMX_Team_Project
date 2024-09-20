@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['visual_5fcurrent_5fpage_0',['visual_current_page',['../classlighting__control__app_1_1dali__controller_1_1DALIController.html#a30a2aea9046184a298d6bc57c8f6492b',1,'lighting_control_app.dali_controller.DALIController.visual_current_page()'],['../classlighting__control__app_1_1dmx__controller_1_1DMXController.html#a1fe3765d67c359f0613ca8d8b224a38e',1,'lighting_control_app.dmx_controller.DMXController.visual_current_page()']]],
+  ['visual_5flabels_1',['visual_labels',['../classlighting__control__app_1_1dali__controller_1_1DALIController.html#a5aa92750942e80bc475ded89ff45d9e3',1,'lighting_control_app.dali_controller.DALIController.visual_labels()'],['../classlighting__control__app_1_1dmx__controller_1_1DMXController.html#ab3adcd222a85b2c67293c4e50de63a48',1,'lighting_control_app.dmx_controller.DMXController.visual_labels()']]],
+  ['visual_5fwindow_2',['visual_window',['../classlighting__control__app_1_1dali__controller_1_1DALIController.html#afe9b4c948ee656edb2b5a30a45d948fb',1,'lighting_control_app.dali_controller.DALIController.visual_window()'],['../classlighting__control__app_1_1dmx__controller_1_1DMXController.html#a57ddb3025ee44029602bdb11d35dd09a',1,'lighting_control_app.dmx_controller.DMXController.visual_window()']]]
+];

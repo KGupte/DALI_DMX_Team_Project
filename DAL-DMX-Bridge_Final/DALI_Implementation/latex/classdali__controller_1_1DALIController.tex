@@ -1,0 +1,152 @@
+\hypertarget{classdali__controller_1_1DALIController}{}\doxysection{dali\+\_\+controller.\+DALIController Class Reference}
+\label{classdali__controller_1_1DALIController}\index{dali\_controller.DALIController@{dali\_controller.DALIController}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classdali__controller_1_1DALIController_ad9507287f82ab1e292b61bd9bb6f1076}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{classdali__controller_1_1DALIController_ae800ac8f07830d88b8377729c109caa5}{create\+\_\+light}} (self, address)
+\item 
+def \mbox{\hyperlink{classdali__controller_1_1DALIController_a87c3913b36a571a278410a9b01b6cda5}{assign\+\_\+light\+\_\+to\+\_\+group}} (self, address, group\+\_\+id)
+\item 
+def \mbox{\hyperlink{classdali__controller_1_1DALIController_aec6bcdbc6fd3125e71d2cb8bcf6b2e31}{send\+\_\+command\+\_\+to\+\_\+group}} (self, group\+\_\+id, command)
+\item 
+def \mbox{\hyperlink{classdali__controller_1_1DALIController_a86935d81c5eb7f08eaf41ef4c036e46e}{send\+\_\+command}} (self, address\+\_\+byte, data\+\_\+byte)
+\item 
+def \mbox{\hyperlink{classdali__controller_1_1DALIController_a5ba00ef271b9a5f09c67b3e0f97694a7}{send\+\_\+scene\+\_\+command}} (self, scene\+\_\+num)
+\item 
+def \mbox{\hyperlink{classdali__controller_1_1DALIController_ae9652f6144f47de0ac0ee0e3c5e4f7de}{process\+\_\+command}} (self, light, command)
+\item 
+def \mbox{\hyperlink{classdali__controller_1_1DALIController_a903ac8bb0c36ec0f8413ee9a3ae10617}{get\+\_\+last\+\_\+message}} (self)
+\item 
+def \mbox{\hyperlink{classdali__controller_1_1DALIController_aa92283e516b44ea24c3a969b3c7b855e}{get\+\_\+last\+\_\+encoded\+\_\+message}} (self)
+\item 
+def \mbox{\hyperlink{classdali__controller_1_1DALIController_af51698ce26d98e7ca7ac76f97de1b7ce}{get\+\_\+last\+\_\+message\+\_\+length}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdali__controller_1_1DALIController_aa7b6a424f02cae2252f038d9420a4d7e}\label{classdali__controller_1_1DALIController_aa7b6a424f02cae2252f038d9420a4d7e}} 
+{\bfseries lights}
+\item 
+\mbox{\Hypertarget{classdali__controller_1_1DALIController_a9009b39565786f777cbb589c4493bec7}\label{classdali__controller_1_1DALIController_a9009b39565786f777cbb589c4493bec7}} 
+{\bfseries groups}
+\item 
+\mbox{\Hypertarget{classdali__controller_1_1DALIController_ad6bdd4fe1f1bb982b1f8f0c49c8a97ba}\label{classdali__controller_1_1DALIController_ad6bdd4fe1f1bb982b1f8f0c49c8a97ba}} 
+{\bfseries last\+\_\+message}
+\item 
+\mbox{\Hypertarget{classdali__controller_1_1DALIController_ae1dba7c09f50a861efd0e5f425b5044b}\label{classdali__controller_1_1DALIController_ae1dba7c09f50a861efd0e5f425b5044b}} 
+{\bfseries last\+\_\+encoded\+\_\+message}
+\item 
+\mbox{\Hypertarget{classdali__controller_1_1DALIController_a1a40d9bfeb7eda0915768417c02db047}\label{classdali__controller_1_1DALIController_a1a40d9bfeb7eda0915768417c02db047}} 
+{\bfseries last\+\_\+length}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}@brief This class manages the control of DALI lights and groups.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdali__controller_1_1DALIController_ad9507287f82ab1e292b61bd9bb6f1076}\label{classdali__controller_1_1DALIController_ad9507287f82ab1e292b61bd9bb6f1076}} 
+\index{dali\_controller.DALIController@{dali\_controller.DALIController}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!dali\_controller.DALIController@{dali\_controller.DALIController}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def dali\+\_\+controller.\+DALIController.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Initialize the DALI controller with lights and groups.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classdali__controller_1_1DALIController_a87c3913b36a571a278410a9b01b6cda5}\label{classdali__controller_1_1DALIController_a87c3913b36a571a278410a9b01b6cda5}} 
+\index{dali\_controller.DALIController@{dali\_controller.DALIController}!assign\_light\_to\_group@{assign\_light\_to\_group}}
+\index{assign\_light\_to\_group@{assign\_light\_to\_group}!dali\_controller.DALIController@{dali\_controller.DALIController}}
+\doxysubsubsection{\texorpdfstring{assign\_light\_to\_group()}{assign\_light\_to\_group()}}
+{\footnotesize\ttfamily def dali\+\_\+controller.\+DALIController.\+assign\+\_\+light\+\_\+to\+\_\+group (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{address,  }\item[{}]{group\+\_\+id }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Assign a light to a specific group.
+@param address The address of the light.
+@param group_id The group ID to assign the light to.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classdali__controller_1_1DALIController_ae800ac8f07830d88b8377729c109caa5}\label{classdali__controller_1_1DALIController_ae800ac8f07830d88b8377729c109caa5}} 
+\index{dali\_controller.DALIController@{dali\_controller.DALIController}!create\_light@{create\_light}}
+\index{create\_light@{create\_light}!dali\_controller.DALIController@{dali\_controller.DALIController}}
+\doxysubsubsection{\texorpdfstring{create\_light()}{create\_light()}}
+{\footnotesize\ttfamily def dali\+\_\+controller.\+DALIController.\+create\+\_\+light (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{address }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Create a new DALI light with the given address.
+@param address Address of the light to be created.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classdali__controller_1_1DALIController_aa92283e516b44ea24c3a969b3c7b855e}\label{classdali__controller_1_1DALIController_aa92283e516b44ea24c3a969b3c7b855e}} 
+\index{dali\_controller.DALIController@{dali\_controller.DALIController}!get\_last\_encoded\_message@{get\_last\_encoded\_message}}
+\index{get\_last\_encoded\_message@{get\_last\_encoded\_message}!dali\_controller.DALIController@{dali\_controller.DALIController}}
+\doxysubsubsection{\texorpdfstring{get\_last\_encoded\_message()}{get\_last\_encoded\_message()}}
+{\footnotesize\ttfamily def dali\+\_\+controller.\+DALIController.\+get\+\_\+last\+\_\+encoded\+\_\+message (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Return the last Manchester encoded message.
+@return The encoded message as a string.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classdali__controller_1_1DALIController_a903ac8bb0c36ec0f8413ee9a3ae10617}\label{classdali__controller_1_1DALIController_a903ac8bb0c36ec0f8413ee9a3ae10617}} 
+\index{dali\_controller.DALIController@{dali\_controller.DALIController}!get\_last\_message@{get\_last\_message}}
+\index{get\_last\_message@{get\_last\_message}!dali\_controller.DALIController@{dali\_controller.DALIController}}
+\doxysubsubsection{\texorpdfstring{get\_last\_message()}{get\_last\_message()}}
+{\footnotesize\ttfamily def dali\+\_\+controller.\+DALIController.\+get\+\_\+last\+\_\+message (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Return the last transmitted message.
+@return The last message as a string.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classdali__controller_1_1DALIController_af51698ce26d98e7ca7ac76f97de1b7ce}\label{classdali__controller_1_1DALIController_af51698ce26d98e7ca7ac76f97de1b7ce}} 
+\index{dali\_controller.DALIController@{dali\_controller.DALIController}!get\_last\_message\_length@{get\_last\_message\_length}}
+\index{get\_last\_message\_length@{get\_last\_message\_length}!dali\_controller.DALIController@{dali\_controller.DALIController}}
+\doxysubsubsection{\texorpdfstring{get\_last\_message\_length()}{get\_last\_message\_length()}}
+{\footnotesize\ttfamily def dali\+\_\+controller.\+DALIController.\+get\+\_\+last\+\_\+message\+\_\+length (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Return the length of the last encoded message.
+@return Length of the message.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classdali__controller_1_1DALIController_ae9652f6144f47de0ac0ee0e3c5e4f7de}\label{classdali__controller_1_1DALIController_ae9652f6144f47de0ac0ee0e3c5e4f7de}} 
+\index{dali\_controller.DALIController@{dali\_controller.DALIController}!process\_command@{process\_command}}
+\index{process\_command@{process\_command}!dali\_controller.DALIController@{dali\_controller.DALIController}}
+\doxysubsubsection{\texorpdfstring{process\_command()}{process\_command()}}
+{\footnotesize\ttfamily def dali\+\_\+controller.\+DALIController.\+process\+\_\+command (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{light,  }\item[{}]{command }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Process a command for a specific light.
+@param light The DALI light object.
+@param command The command to be processed.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classdali__controller_1_1DALIController_a86935d81c5eb7f08eaf41ef4c036e46e}\label{classdali__controller_1_1DALIController_a86935d81c5eb7f08eaf41ef4c036e46e}} 
+\index{dali\_controller.DALIController@{dali\_controller.DALIController}!send\_command@{send\_command}}
+\index{send\_command@{send\_command}!dali\_controller.DALIController@{dali\_controller.DALIController}}
+\doxysubsubsection{\texorpdfstring{send\_command()}{send\_command()}}
+{\footnotesize\ttfamily def dali\+\_\+controller.\+DALIController.\+send\+\_\+command (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{address\+\_\+byte,  }\item[{}]{data\+\_\+byte }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Send a command to a DALI device or group.
+@param address_byte Address byte to send.
+@param data_byte Data byte to send.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classdali__controller_1_1DALIController_aec6bcdbc6fd3125e71d2cb8bcf6b2e31}\label{classdali__controller_1_1DALIController_aec6bcdbc6fd3125e71d2cb8bcf6b2e31}} 
+\index{dali\_controller.DALIController@{dali\_controller.DALIController}!send\_command\_to\_group@{send\_command\_to\_group}}
+\index{send\_command\_to\_group@{send\_command\_to\_group}!dali\_controller.DALIController@{dali\_controller.DALIController}}
+\doxysubsubsection{\texorpdfstring{send\_command\_to\_group()}{send\_command\_to\_group()}}
+{\footnotesize\ttfamily def dali\+\_\+controller.\+DALIController.\+send\+\_\+command\+\_\+to\+\_\+group (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{group\+\_\+id,  }\item[{}]{command }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Send a command to all lights in a group.
+@param group_id The ID of the group.
+@param command The command to be sent to the group.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classdali__controller_1_1DALIController_a5ba00ef271b9a5f09c67b3e0f97694a7}\label{classdali__controller_1_1DALIController_a5ba00ef271b9a5f09c67b3e0f97694a7}} 
+\index{dali\_controller.DALIController@{dali\_controller.DALIController}!send\_scene\_command@{send\_scene\_command}}
+\index{send\_scene\_command@{send\_scene\_command}!dali\_controller.DALIController@{dali\_controller.DALIController}}
+\doxysubsubsection{\texorpdfstring{send\_scene\_command()}{send\_scene\_command()}}
+{\footnotesize\ttfamily def dali\+\_\+controller.\+DALIController.\+send\+\_\+scene\+\_\+command (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{scene\+\_\+num }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Send a scene command to all lights and set the brightness levels.
+@param scene_num The scene number.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dali\+\_\+controller.\+py\end{DoxyCompactItemize}

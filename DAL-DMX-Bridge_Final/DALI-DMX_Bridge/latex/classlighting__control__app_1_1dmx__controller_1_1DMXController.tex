@@ -1,0 +1,181 @@
+\hypertarget{classlighting__control__app_1_1dmx__controller_1_1DMXController}{}\doxysection{lighting\+\_\+control\+\_\+app.\+dmx\+\_\+controller.\+DMXController Class Reference}
+\label{classlighting__control__app_1_1dmx__controller_1_1DMXController}\index{lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classlighting__control__app_1_1dmx__controller_1_1DMXController_a70c2dec91368ac341ba532e69eccfb6c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, root, \mbox{\hyperlink{classlighting__control__app_1_1dmx__controller_1_1DMXController_a6d663b67547d425fb722afb3d63f4bd6}{assignment\+\_\+registry}})
+\item 
+def \mbox{\hyperlink{classlighting__control__app_1_1dmx__controller_1_1DMXController_a8ca8f48a8201112b23e615d729d39cb0}{process\+\_\+queue}} (self)
+\item 
+def \mbox{\hyperlink{classlighting__control__app_1_1dmx__controller_1_1DMXController_a0094b0ea3e4b5c350201b3f19de8833a}{dmx\+\_\+sent}} (self, status)
+\item 
+def \mbox{\hyperlink{classlighting__control__app_1_1dmx__controller_1_1DMXController_a0bf9b1abe7ed1e1dee7485064f492527}{send\+\_\+dmx}} (self)
+\item 
+def \mbox{\hyperlink{classlighting__control__app_1_1dmx__controller_1_1DMXController_a590c902120d4ef9ab1274facf76f815d}{update\+\_\+brightness}} (self, channel, value)
+\item 
+def \mbox{\hyperlink{classlighting__control__app_1_1dmx__controller_1_1DMXController_a6ebde8ceeab59886b1aa04e11ed4950f}{create\+\_\+visual\+\_\+window}} (self, root)
+\item 
+def \mbox{\hyperlink{classlighting__control__app_1_1dmx__controller_1_1DMXController_a449f6ffa348a979c2807aa72609c2cb9}{update\+\_\+visual\+\_\+page}} (self, page)
+\item 
+def \mbox{\hyperlink{classlighting__control__app_1_1dmx__controller_1_1DMXController_ae6b6acb4fe1a4fea76519633cc9d6036}{update\+\_\+visual\+\_\+display}} (self, channel, value)
+\item 
+def \mbox{\hyperlink{classlighting__control__app_1_1dmx__controller_1_1DMXController_ab445b72ee1dab7dc67dca4e5ae48b250}{New\+Data}} (self, data)
+\item 
+def \mbox{\hyperlink{classlighting__control__app_1_1dmx__controller_1_1DMXController_a7b6c67e8f9b6f9d4f954d443bb947923}{run\+\_\+ola\+\_\+client}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlighting__control__app_1_1dmx__controller_1_1DMXController_a2c2345c7adfc5dc30f30b71353c15b76}{universe}}
+\item 
+\mbox{\hyperlink{classlighting__control__app_1_1dmx__controller_1_1DMXController_a5a5547f5e95264203824b885c2b39965}{dmx\+\_\+data}}
+\item 
+\mbox{\hyperlink{classlighting__control__app_1_1dmx__controller_1_1DMXController_afe4d871cc0523b4b767b6be54d1d35b3}{channels\+\_\+per\+\_\+page}}
+\item 
+\mbox{\hyperlink{classlighting__control__app_1_1dmx__controller_1_1DMXController_a1fe3765d67c359f0613ca8d8b224a38e}{visual\+\_\+current\+\_\+page}}
+\item 
+\mbox{\hyperlink{classlighting__control__app_1_1dmx__controller_1_1DMXController_abb86e683979be0a403212156e023f2e8}{wrapper}}
+\item 
+\mbox{\hyperlink{classlighting__control__app_1_1dmx__controller_1_1DMXController_aaa699078bf12694d246404425f3b70fb}{data\+\_\+queue}}
+\item 
+\mbox{\hyperlink{classlighting__control__app_1_1dmx__controller_1_1DMXController_a6d663b67547d425fb722afb3d63f4bd6}{assignment\+\_\+registry}}
+\item 
+\mbox{\hyperlink{classlighting__control__app_1_1dmx__controller_1_1DMXController_a57ddb3025ee44029602bdb11d35dd09a}{visual\+\_\+window}}
+\item 
+\mbox{\hyperlink{classlighting__control__app_1_1dmx__controller_1_1DMXController_ab3adcd222a85b2c67293c4e50de63a48}{visual\+\_\+labels}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}@brief Initializes the DMXController with a GUI and OLA client.
+@param root The root Tkinter window.
+@param assignment_registry The registry for device assignments.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlighting__control__app_1_1dmx__controller_1_1DMXController_a70c2dec91368ac341ba532e69eccfb6c}\label{classlighting__control__app_1_1dmx__controller_1_1DMXController_a70c2dec91368ac341ba532e69eccfb6c}} 
+\index{lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def lighting\+\_\+control\+\_\+app.\+dmx\+\_\+controller.\+DMXController.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{root,  }\item[{}]{assignment\+\_\+registry }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlighting__control__app_1_1dmx__controller_1_1DMXController_a6ebde8ceeab59886b1aa04e11ed4950f}\label{classlighting__control__app_1_1dmx__controller_1_1DMXController_a6ebde8ceeab59886b1aa04e11ed4950f}} 
+\index{lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}!create\_visual\_window@{create\_visual\_window}}
+\index{create\_visual\_window@{create\_visual\_window}!lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}}
+\doxysubsubsection{\texorpdfstring{create\_visual\_window()}{create\_visual\_window()}}
+{\footnotesize\ttfamily def lighting\+\_\+control\+\_\+app.\+dmx\+\_\+controller.\+DMXController.\+create\+\_\+visual\+\_\+window (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{root }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classlighting__control__app_1_1dmx__controller_1_1DMXController_a0094b0ea3e4b5c350201b3f19de8833a}\label{classlighting__control__app_1_1dmx__controller_1_1DMXController_a0094b0ea3e4b5c350201b3f19de8833a}} 
+\index{lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}!dmx\_sent@{dmx\_sent}}
+\index{dmx\_sent@{dmx\_sent}!lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}}
+\doxysubsubsection{\texorpdfstring{dmx\_sent()}{dmx\_sent()}}
+{\footnotesize\ttfamily def lighting\+\_\+control\+\_\+app.\+dmx\+\_\+controller.\+DMXController.\+dmx\+\_\+sent (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{status }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classlighting__control__app_1_1dmx__controller_1_1DMXController_ab445b72ee1dab7dc67dca4e5ae48b250}\label{classlighting__control__app_1_1dmx__controller_1_1DMXController_ab445b72ee1dab7dc67dca4e5ae48b250}} 
+\index{lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}!NewData@{NewData}}
+\index{NewData@{NewData}!lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}}
+\doxysubsubsection{\texorpdfstring{NewData()}{NewData()}}
+{\footnotesize\ttfamily def lighting\+\_\+control\+\_\+app.\+dmx\+\_\+controller.\+DMXController.\+New\+Data (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classlighting__control__app_1_1dmx__controller_1_1DMXController_a8ca8f48a8201112b23e615d729d39cb0}\label{classlighting__control__app_1_1dmx__controller_1_1DMXController_a8ca8f48a8201112b23e615d729d39cb0}} 
+\index{lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}!process\_queue@{process\_queue}}
+\index{process\_queue@{process\_queue}!lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}}
+\doxysubsubsection{\texorpdfstring{process\_queue()}{process\_queue()}}
+{\footnotesize\ttfamily def lighting\+\_\+control\+\_\+app.\+dmx\+\_\+controller.\+DMXController.\+process\+\_\+queue (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classlighting__control__app_1_1dmx__controller_1_1DMXController_a7b6c67e8f9b6f9d4f954d443bb947923}\label{classlighting__control__app_1_1dmx__controller_1_1DMXController_a7b6c67e8f9b6f9d4f954d443bb947923}} 
+\index{lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}!run\_ola\_client@{run\_ola\_client}}
+\index{run\_ola\_client@{run\_ola\_client}!lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}}
+\doxysubsubsection{\texorpdfstring{run\_ola\_client()}{run\_ola\_client()}}
+{\footnotesize\ttfamily def lighting\+\_\+control\+\_\+app.\+dmx\+\_\+controller.\+DMXController.\+run\+\_\+ola\+\_\+client (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classlighting__control__app_1_1dmx__controller_1_1DMXController_a0bf9b1abe7ed1e1dee7485064f492527}\label{classlighting__control__app_1_1dmx__controller_1_1DMXController_a0bf9b1abe7ed1e1dee7485064f492527}} 
+\index{lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}!send\_dmx@{send\_dmx}}
+\index{send\_dmx@{send\_dmx}!lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}}
+\doxysubsubsection{\texorpdfstring{send\_dmx()}{send\_dmx()}}
+{\footnotesize\ttfamily def lighting\+\_\+control\+\_\+app.\+dmx\+\_\+controller.\+DMXController.\+send\+\_\+dmx (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classlighting__control__app_1_1dmx__controller_1_1DMXController_a590c902120d4ef9ab1274facf76f815d}\label{classlighting__control__app_1_1dmx__controller_1_1DMXController_a590c902120d4ef9ab1274facf76f815d}} 
+\index{lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}!update\_brightness@{update\_brightness}}
+\index{update\_brightness@{update\_brightness}!lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}}
+\doxysubsubsection{\texorpdfstring{update\_brightness()}{update\_brightness()}}
+{\footnotesize\ttfamily def lighting\+\_\+control\+\_\+app.\+dmx\+\_\+controller.\+DMXController.\+update\+\_\+brightness (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{channel,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classlighting__control__app_1_1dmx__controller_1_1DMXController_ae6b6acb4fe1a4fea76519633cc9d6036}\label{classlighting__control__app_1_1dmx__controller_1_1DMXController_ae6b6acb4fe1a4fea76519633cc9d6036}} 
+\index{lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}!update\_visual\_display@{update\_visual\_display}}
+\index{update\_visual\_display@{update\_visual\_display}!lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}}
+\doxysubsubsection{\texorpdfstring{update\_visual\_display()}{update\_visual\_display()}}
+{\footnotesize\ttfamily def lighting\+\_\+control\+\_\+app.\+dmx\+\_\+controller.\+DMXController.\+update\+\_\+visual\+\_\+display (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{channel,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classlighting__control__app_1_1dmx__controller_1_1DMXController_a449f6ffa348a979c2807aa72609c2cb9}\label{classlighting__control__app_1_1dmx__controller_1_1DMXController_a449f6ffa348a979c2807aa72609c2cb9}} 
+\index{lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}!update\_visual\_page@{update\_visual\_page}}
+\index{update\_visual\_page@{update\_visual\_page}!lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}}
+\doxysubsubsection{\texorpdfstring{update\_visual\_page()}{update\_visual\_page()}}
+{\footnotesize\ttfamily def lighting\+\_\+control\+\_\+app.\+dmx\+\_\+controller.\+DMXController.\+update\+\_\+visual\+\_\+page (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{page }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classlighting__control__app_1_1dmx__controller_1_1DMXController_a6d663b67547d425fb722afb3d63f4bd6}\label{classlighting__control__app_1_1dmx__controller_1_1DMXController_a6d663b67547d425fb722afb3d63f4bd6}} 
+\index{lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}!assignment\_registry@{assignment\_registry}}
+\index{assignment\_registry@{assignment\_registry}!lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}}
+\doxysubsubsection{\texorpdfstring{assignment\_registry}{assignment\_registry}}
+{\footnotesize\ttfamily lighting\+\_\+control\+\_\+app.\+dmx\+\_\+controller.\+DMXController.\+assignment\+\_\+registry}
+
+\mbox{\Hypertarget{classlighting__control__app_1_1dmx__controller_1_1DMXController_afe4d871cc0523b4b767b6be54d1d35b3}\label{classlighting__control__app_1_1dmx__controller_1_1DMXController_afe4d871cc0523b4b767b6be54d1d35b3}} 
+\index{lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}!channels\_per\_page@{channels\_per\_page}}
+\index{channels\_per\_page@{channels\_per\_page}!lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}}
+\doxysubsubsection{\texorpdfstring{channels\_per\_page}{channels\_per\_page}}
+{\footnotesize\ttfamily lighting\+\_\+control\+\_\+app.\+dmx\+\_\+controller.\+DMXController.\+channels\+\_\+per\+\_\+page}
+
+\mbox{\Hypertarget{classlighting__control__app_1_1dmx__controller_1_1DMXController_aaa699078bf12694d246404425f3b70fb}\label{classlighting__control__app_1_1dmx__controller_1_1DMXController_aaa699078bf12694d246404425f3b70fb}} 
+\index{lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}!data\_queue@{data\_queue}}
+\index{data\_queue@{data\_queue}!lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}}
+\doxysubsubsection{\texorpdfstring{data\_queue}{data\_queue}}
+{\footnotesize\ttfamily lighting\+\_\+control\+\_\+app.\+dmx\+\_\+controller.\+DMXController.\+data\+\_\+queue}
+
+\mbox{\Hypertarget{classlighting__control__app_1_1dmx__controller_1_1DMXController_a5a5547f5e95264203824b885c2b39965}\label{classlighting__control__app_1_1dmx__controller_1_1DMXController_a5a5547f5e95264203824b885c2b39965}} 
+\index{lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}!dmx\_data@{dmx\_data}}
+\index{dmx\_data@{dmx\_data}!lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}}
+\doxysubsubsection{\texorpdfstring{dmx\_data}{dmx\_data}}
+{\footnotesize\ttfamily lighting\+\_\+control\+\_\+app.\+dmx\+\_\+controller.\+DMXController.\+dmx\+\_\+data}
+
+\mbox{\Hypertarget{classlighting__control__app_1_1dmx__controller_1_1DMXController_a2c2345c7adfc5dc30f30b71353c15b76}\label{classlighting__control__app_1_1dmx__controller_1_1DMXController_a2c2345c7adfc5dc30f30b71353c15b76}} 
+\index{lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}!universe@{universe}}
+\index{universe@{universe}!lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}}
+\doxysubsubsection{\texorpdfstring{universe}{universe}}
+{\footnotesize\ttfamily lighting\+\_\+control\+\_\+app.\+dmx\+\_\+controller.\+DMXController.\+universe}
+
+\mbox{\Hypertarget{classlighting__control__app_1_1dmx__controller_1_1DMXController_a1fe3765d67c359f0613ca8d8b224a38e}\label{classlighting__control__app_1_1dmx__controller_1_1DMXController_a1fe3765d67c359f0613ca8d8b224a38e}} 
+\index{lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}!visual\_current\_page@{visual\_current\_page}}
+\index{visual\_current\_page@{visual\_current\_page}!lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}}
+\doxysubsubsection{\texorpdfstring{visual\_current\_page}{visual\_current\_page}}
+{\footnotesize\ttfamily lighting\+\_\+control\+\_\+app.\+dmx\+\_\+controller.\+DMXController.\+visual\+\_\+current\+\_\+page}
+
+\mbox{\Hypertarget{classlighting__control__app_1_1dmx__controller_1_1DMXController_ab3adcd222a85b2c67293c4e50de63a48}\label{classlighting__control__app_1_1dmx__controller_1_1DMXController_ab3adcd222a85b2c67293c4e50de63a48}} 
+\index{lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}!visual\_labels@{visual\_labels}}
+\index{visual\_labels@{visual\_labels}!lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}}
+\doxysubsubsection{\texorpdfstring{visual\_labels}{visual\_labels}}
+{\footnotesize\ttfamily lighting\+\_\+control\+\_\+app.\+dmx\+\_\+controller.\+DMXController.\+visual\+\_\+labels}
+
+\mbox{\Hypertarget{classlighting__control__app_1_1dmx__controller_1_1DMXController_a57ddb3025ee44029602bdb11d35dd09a}\label{classlighting__control__app_1_1dmx__controller_1_1DMXController_a57ddb3025ee44029602bdb11d35dd09a}} 
+\index{lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}!visual\_window@{visual\_window}}
+\index{visual\_window@{visual\_window}!lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}}
+\doxysubsubsection{\texorpdfstring{visual\_window}{visual\_window}}
+{\footnotesize\ttfamily lighting\+\_\+control\+\_\+app.\+dmx\+\_\+controller.\+DMXController.\+visual\+\_\+window}
+
+\mbox{\Hypertarget{classlighting__control__app_1_1dmx__controller_1_1DMXController_abb86e683979be0a403212156e023f2e8}\label{classlighting__control__app_1_1dmx__controller_1_1DMXController_abb86e683979be0a403212156e023f2e8}} 
+\index{lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}!wrapper@{wrapper}}
+\index{wrapper@{wrapper}!lighting\_control\_app.dmx\_controller.DMXController@{lighting\_control\_app.dmx\_controller.DMXController}}
+\doxysubsubsection{\texorpdfstring{wrapper}{wrapper}}
+{\footnotesize\ttfamily lighting\+\_\+control\+\_\+app.\+dmx\+\_\+controller.\+DMXController.\+wrapper}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lighting\+\_\+control\+\_\+app/\mbox{\hyperlink{dmx__controller_8py}{dmx\+\_\+controller.\+py}}\end{DoxyCompactItemize}

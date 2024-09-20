@@ -1,0 +1,80 @@
+\hypertarget{namespacegui__components}{}\doxysection{gui\+\_\+components Namespace Reference}
+\label{namespacegui__components}\index{gui\_components@{gui\_components}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacegui__components_aa4ea795844a80dfc16389fa6cfe1ecde}{create\+\_\+input\+\_\+controls}} (root, sliders, labels)
+\item 
+def \mbox{\hyperlink{namespacegui__components_a5e90d9bacdf768d7de63f74bf8dfd684}{create\+\_\+visual\+\_\+window}} (root)
+\item 
+def \mbox{\hyperlink{namespacegui__components_a714d2c138023274e67f0df823d7e664e}{update\+\_\+page}} (page, sliders, labels)
+\item 
+def \mbox{\hyperlink{namespacegui__components_a373b8f1275eb923f72f91078186f3278}{update\+\_\+visual\+\_\+page}} (page)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb} * @file gui_components.py
+ * @brief Provides functions to create and manage GUI components for the DMX Controller.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacegui__components_aa4ea795844a80dfc16389fa6cfe1ecde}\label{namespacegui__components_aa4ea795844a80dfc16389fa6cfe1ecde}} 
+\index{gui\_components@{gui\_components}!create\_input\_controls@{create\_input\_controls}}
+\index{create\_input\_controls@{create\_input\_controls}!gui\_components@{gui\_components}}
+\doxysubsubsection{\texorpdfstring{create\_input\_controls()}{create\_input\_controls()}}
+{\footnotesize\ttfamily def gui\+\_\+components.\+create\+\_\+input\+\_\+controls (\begin{DoxyParamCaption}\item[{}]{root,  }\item[{}]{sliders,  }\item[{}]{labels }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} * @brief Create sliders and labels for DMX input controls.
+ * 
+ * Sets up a series of sliders and labels for each DMX channel on the
+ * current page. Sliders are used to adjust the brightness of each channel.
+ * 
+ * @param root The Tkinter root window.
+ * @param sliders List to store references to slider widgets.
+ * @param labels List to store references to label widgets.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegui__components_a5e90d9bacdf768d7de63f74bf8dfd684}\label{namespacegui__components_a5e90d9bacdf768d7de63f74bf8dfd684}} 
+\index{gui\_components@{gui\_components}!create\_visual\_window@{create\_visual\_window}}
+\index{create\_visual\_window@{create\_visual\_window}!gui\_components@{gui\_components}}
+\doxysubsubsection{\texorpdfstring{create\_visual\_window()}{create\_visual\_window()}}
+{\footnotesize\ttfamily def gui\+\_\+components.\+create\+\_\+visual\+\_\+window (\begin{DoxyParamCaption}\item[{}]{root }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} * @brief Create the visual display window for DMX output.
+ * 
+ * Initializes the visual display window with frames and labels to represent
+ * each DMX channel on the current page. Sets up navigation buttons for
+ * paging through the visual display.
+ * 
+ * @param root The Tkinter root window to which the visual window will be attached.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegui__components_a714d2c138023274e67f0df823d7e664e}\label{namespacegui__components_a714d2c138023274e67f0df823d7e664e}} 
+\index{gui\_components@{gui\_components}!update\_page@{update\_page}}
+\index{update\_page@{update\_page}!gui\_components@{gui\_components}}
+\doxysubsubsection{\texorpdfstring{update\_page()}{update\_page()}}
+{\footnotesize\ttfamily def gui\+\_\+components.\+update\+\_\+page (\begin{DoxyParamCaption}\item[{}]{page,  }\item[{}]{sliders,  }\item[{}]{labels }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} * @brief Update the sliders and labels to reflect the DMX channels for the current page.
+ * 
+ * Adjusts the sliders and labels to match the DMX data for the channels on
+ * the specified page. Also updates the visual display for the channels.
+ * 
+ * @param page The page number to update.
+ * @param sliders List of slider widgets to be updated.
+ * @param labels List of label widgets to be updated.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegui__components_a373b8f1275eb923f72f91078186f3278}\label{namespacegui__components_a373b8f1275eb923f72f91078186f3278}} 
+\index{gui\_components@{gui\_components}!update\_visual\_page@{update\_visual\_page}}
+\index{update\_visual\_page@{update\_visual\_page}!gui\_components@{gui\_components}}
+\doxysubsubsection{\texorpdfstring{update\_visual\_page()}{update\_visual\_page()}}
+{\footnotesize\ttfamily def gui\+\_\+components.\+update\+\_\+visual\+\_\+page (\begin{DoxyParamCaption}\item[{}]{page }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} * @brief Update the visual display to show the correct channels for the current page.
+ * 
+ * Adjusts the visual representation of the DMX channels based on the specified
+ * page number. Updates the labels with the current channel data.
+ * 
+ * @param page The page number to update in the visual display.
+\end{DoxyVerb}
+ 
